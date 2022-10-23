@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	--efect: #f1f1f1;
+	--borderColor: #bcc1c4;
+}
+
+@font-face {
+	font-family: rubik;
+	src: url(../fonts/Rubik-Regular.ttf);
+}
+
+body { font-family: rubik }
+
+.container {
+	width: 412px;
+	height: 788px;
+	border: 1px dotted #00f;/* Remover isso */
+	text-align: center;
+}
+
+.itens {
+	width: 300px;
+	border: 2px solid var(--borderColor);
+	border-radius: 8px;
+	color: #4e5253;
+	padding: 15px;
+	margin: 20px auto;
+	text-align: center;
+	font-weight: bold;
+}
+
+.itens:hover {
+	transform: scale(1.03);
+	transition: 0.1s;
+	background-color: var(--efect);
+}
