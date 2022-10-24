@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primaryColor: #4e5253;
+	--efect: #f1f1f1;
+	--borderColor: #bcc1c4;
+	--radius: 8px;
+	--sucess: #36d40e;
+}
+
+@font-face {
+	font-family: rubik;
+	src: url(../fonts/Rubik-Regular.ttf);
+}
+
+body {
+	font-family: rubik;
+}
+
+.container {
+	margin: 10px;
+}
+
+h2, h4 { margin: 16px 0 }
+
+#maitre {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+tr:nth-child(even) {
+	background-color: var(--efect);
+}
+
+th {
+	background-color: var(--primaryColor);
+	color: white;
+}
+
+th, td {
+	border: 1px solid var(--borderColor);
+	padding: 3px 6px;
+}

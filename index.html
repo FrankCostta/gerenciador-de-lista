@@ -12,10 +12,23 @@
 	<div class="container">
 		<h4>Gerenciador de cadastro de garçom</h4>
 
-		<div class="itens">Lista completa</div>
-		<div class="itens">Criar lista</div>
-		<div class="itens">Listas salvas</div>
-		<div class="itens">Registrar</div>
+		<div class="itens" id="lista-completa">
+			<a href="listacompleta.html">Lista completa</a>
+		</div>
+		<div class="itens" id="criar-lista">Criar lista</div>
+		<div class="itens" id="listas-salvas">Listas salvas</div>
+		<div class="itens" id="registrar">Registrar</div>
+
+		<form id="modal-registro">
+			<button id="fecha-modal">X</button>
+			<h4>Faça um novo registro</h4>
+			<hr>
+			<label>Nome: </label><br>
+			<input type="text" name="nome" id="nome"><br>
+			<label>RG: </label><br>
+			<input type="text" name="rg" id="rg">
+			<input type="submit" value="Registrar" id="">
+		</form>
 	</div>
 	
 	<script src="./src/main.js"></script>
