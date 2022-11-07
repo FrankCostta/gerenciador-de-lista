@@ -44,8 +44,31 @@ th {
 	background-color: var(--primaryColor);
 	color: white;
 }
+th:nth-of-type(2) {
+	text-align-last: left;
+}
 
 th, td {
 	border: 1px solid var(--borderColor);
 	padding: 3px 6px;
+}
+
+.index {
+	width: 40px;
+	text-align: center;
+}
+
+td:first-child {
+	width: 40px;
+	text-align: center;
+}
+
+td:last-child {
+	text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+	table {
+		width: 600px;
+	}
 }
